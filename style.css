@@ -12,3 +12,7 @@ body{
     border: none;
     transition: transform 0.2s;
 }
+.texta{
+    text-align: center;
+    color: brown;
+}
