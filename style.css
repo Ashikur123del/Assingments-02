@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif ;
+}
+
+.commonbtn {
+    background: linear-gradient(35deg, #F7E93F 7%, #FB09B4 60%, #9100F8 123%);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    transition: transform 0.2s;
+}
