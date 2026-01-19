@@ -11,19 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- top header start -->
 
-    <header class="bg-[#1a0b2e] py-4 px-4">
+    <header class="bg-[#1a0b2e] py-4 px-4 border-b border-gray-300">
       <div class="max-w-7xl mx-auto">
         <div class="flex justify-between items-center">
           <div class="">
             <h1 class="text-2xl text-white">
               Tech<span
-                class="font-bold bg-clip-text text-transparent bg-[linear-gradient(35deg,#F7E93F_7%,#FB09B4_60%,#9100F8_123%)]">Wave</span
+                class="font-bold bg-clip-text text-transparent bg-[linear-gradient(35deg,#F7E93F_7%,#FB09B4_60%,#9100F8_123%)]"
+                >Wave</span
               >
             </h1>
           </div>
@@ -36,10 +37,14 @@
           </nav>
           <div class="flex items-center">
             <div class="md:hidden">
-              <i class="fa-solid fa-bars text-white text-2xl cursor-pointer"></i>
+              <i
+                class="fa-solid fa-bars text-white text-2xl cursor-pointer"
+              ></i>
             </div>
             <button
-              class="commonbtn text-white py-3 px-10 rounded-full hidden md:flex items-center gap-3"> Subscribe <i class="fa-solid fa-arrow-right"></i>
+              class="commonbtn text-white py-3 px-10 rounded-full hidden md:flex items-center gap-3"
+            >
+              Subscribe <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -49,14 +54,109 @@
 
     <!-- hero section start here -->
 
-    <section>
-        <div class="">
-          <h2 class="texta">Our Hero Section</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, veritatis?</p>
-          <h3>Amr sonar bagla</h3>
+    <section
+      class="relative flex flex-col items-center justify-center min-h-screen bg-[#0d0221] bg-[url('./assets/hero-bg.png')] bg-cover bg-no-repeat bg-center text-white px-4 text-center overflow-hidden"
+    >
+      <div class="relative mb-8 flex items-center justify-center">
+        <span
+          class="absolute top-2 animate-bounce right-4 md:right-8 bg-[#00FF88] text-black text-[10px] font-bold px-2 py-0.5 rounded-full z-30"
+        >
+          NEW
+        </span>
+
+        <div
+          class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-purple-500/20 overflow-hidden z-10"
+        >
+          <img
+            src="./assets/hero-circle.png"
+            alt="Gradient Background"
+            class="w-full h-full object-cover"
+          />
         </div>
+
+        <div class="absolute z-20 flex items-center justify-center">
+          <img
+            src="./assets/microphone.png"
+            alt="Microphone"
+            class="w-16 h-16 md:w-24 md:h-24 object-contain"
+          />
+        </div>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
+        TechWave
+      </h1>
+      <p class="text-gray-400 max-w-md mb-8 text-sm md:text-lg leading-relaxed">
+        Your daily dose of tech insights, productivity hacks, and personal
+        growth.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="#"
+          class="flex items-center gap-2 px-8 py-3 rounded-full commonbtn text-white font-bold hover:scale-105 transition-all duration-200 shadow-lg"
+        >
+          <img src="./assets/spotify.png" class="w-5 h-5" alt="" />
+          <span>Listen On Spotify</span>
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center gap-2 px-8 py-3 rounded-full border-2 border-[#00ff88] text-[#00ff88] font-bold hover:bg-[#00ff88] hover:text-black transition-all duration-200"
+        >
+          <img src="/assets/message.png" alt="" />
+          <span>Subscribe</span>
+        </a>
+      </div>
     </section>
     <!-- hero section ends here -->
+
+
+<!-- About the Podcast section start here -->
+
+
+<section class="bg-[#1a0b2e]">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center">
+    <h2 class="text-white text-2xl  md:text-4xl">About the Podcast</h2>
+    <p class=" text-gray-400 my-4 leading-[30px] text-gray-400">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br> We break down complex topics into digestible insights, explore productivity strategies that actually work, <br> and share stories of personal growth from industry leaders.</p>
+    <p class="text-gray-400">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+  </div>
+  <div class="py-10 mt-4 border-gray-700 border-t flex justify-between items-center">
+      <div class="text-center">
+        <p class="text-[#00FF88] font-semibold  text-3xl mb-2">150k+</p>
+        <span class="text-gray-400 font-semibold ">Monthly Listeners</span>
+      </div>
+      <div class="text-center">
+        <p class="text-[#00FF88] font-semibold  text-3xl mb-2">200+</p>
+        <span class="text-gray-400 font-semibold ">Episodes Published</span>
+      </div>
+      <div class="text-center">
+        <p class="text-[#00FF88] font-semibold  text-3xl mb-2">4.9 <span></span></p>
+        <span class="text-gray-400"> Average Rating</span>
+      </div>
+      <div class="text-center">
+        <p class="text-[#00FF88] font-semibold text-3xl mb-2">50k</p>
+        <span class="text-gray-400 font-semibold ">Industry Experts</span>
+      </div>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- About the Podcast section ends here -->
+
+
+
+
+
 
 
 

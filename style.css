@@ -12,7 +12,11 @@ body{
     border: none;
     transition: transform 0.2s;
 }
-.texta{
-    text-align: center;
-    color: brown;
+
+.hero-circle-img {
+    box-shadow: 0 0 50px rgba(168, 85, 247, 0.4); 
+}
+
+.hero-bg-img {
+    background-attachment: fixed; 
 }
